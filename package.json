@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "A simple log viewer",
   "scripts": {
-    "start": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 8383 --content-base src"
+    "start": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 8383 --content-base src",
+    "build": "webpack --progress --colors"
   },
   "repository": {
     "type": "git",
