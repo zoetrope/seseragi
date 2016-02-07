@@ -6,9 +6,9 @@ import {About} from './components/about/about';
 import {RepoBrowser} from './components/repo-browser/repo-browser';
 
 @Component({
-  selector: 'seed-app',
+  selector: 'seseragi-app',
   providers: [],
-  templateUrl: 'app/seed-app.html',
+  templateUrl: 'app/seseragi-app.html',
   directives: [ROUTER_DIRECTIVES],
   pipes: []
 })
@@ -17,7 +17,7 @@ import {RepoBrowser} from './components/repo-browser/repo-browser';
   new Route({ path: '/about', component: About, name: 'About'}),
   new Route({ path: '/github/...', component: RepoBrowser, name: 'RepoBrowser'})
 ])
-export class SeedApp {
+export class SeseragiApp {
 
   constructor() {}
 
