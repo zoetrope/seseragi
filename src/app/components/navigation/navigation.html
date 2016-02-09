@@ -1,0 +1,25 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+              aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">SESERAGI</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <form class="navbar-form navbar-right">
+        <input type="text" placeholder="url" ng-model="url" class="form-control"
+               ng-disabled="connecting.value || connected.value">
+        <input type="text" class="form-control" id="linesPerPage" ng-model="limit"
+               placeholder="number of lines per page">
+        <input type="text" class="form-control" id="bufferSize" ng-model="bufferSize" placeholder="buffer size">
+        <button class="btn btn-default" rp-command="connect">connect</button>
+        <button class="btn btn-default" rp-command="close">disconnect</button>
+      </form>
+    </div>
+  </div>
+</nav>
