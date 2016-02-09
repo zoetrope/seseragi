@@ -1,0 +1,11 @@
+.log-view {
+  margin: 65px 10px 10px 10px;
+}
+
+.log-list {
+  overflow: auto;
+  /*overflow-y: scroll;*/
+  width: 100%;
+  /*height: 500px;*/
+}
+

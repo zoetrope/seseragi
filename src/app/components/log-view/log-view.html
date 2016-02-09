@@ -1,2 +1,20 @@
-<h3>About Component</h3>
-<p>This is the about component!</p>
+<div class="log-view" ng-controller="AquaAllController">
+  <input type="text" ng-model="searchTextInput.value" placeholder="search text" class="form-control">
+
+  <div class="log-list">
+    <table class="table table-striped">
+      <tr>
+        <th width="80">level</th>
+        <th width="180">time</th>
+        <th>message</th>
+      </tr>
+      <tr ng-repeat="log in allLogs.values | logLevelFilter:selection | filter:searchTextDelay.value | limitTo:limit"
+          ng-click="setSelectedLog(log)">
+        <td ng-class="{'selected-log': log.selected}"><span
+            ng-class="getLogLevelColor(log.level)">{{log.level}}</span></td>
+        <td ng-class="{'selected-log': log.selected}">{{log.time}},{{log.msec}}</td>
+        <td ng-class="{'selected-log': log.selected}">{{log.message_summary}}</td>
+      </tr>
+    </table>
+  </div>
+</div>
